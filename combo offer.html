@@ -1,0 +1,560 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>combo offer</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand img {
+      max-height: 40px; 
+      margin-right: 10px; 
+    }
+    .card img {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+    }
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .card img {
+      height: 300px;
+      width: 328px;
+      object-fit: cover;
+    }
+    .card-container {
+      display: flex;
+   
+      gap: 30px;
+     
+    }
+    .card img:hover {
+      transform: scale(1.05); 
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    }
+
+  
+    .navbar-nav .nav-link {
+  color: rgb(22, 21, 21);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.navbar-nav .nav-link {
+  color: rgb(199, 194, 194);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+footer {
+      background-color: #212222;
+      color: rgb(240, 231, 231);
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer a {
+      color: #eaeaf1;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #ffc107;
+    }
+
+
+    .one {
+    justify-content: space-around;
+    display: flex;
+  }
+  
+  .h {
+    color:white;
+  }
+  
+  
+  .co {
+    margin-bottom: 20px;
+    color: blue;
+    text-decoration: underline;
+    justify-content: center;
+    display: flex;
+    text-underline-offset: 7px;
+  }
+  
+  .co1 {
+    margin-bottom: 20px;
+    color: blue;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+  
+  .boxes1 {
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  .concheck {
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  .bn {
+    padding: 5px;
+    color: white;
+    background-color: rgb(230, 92, 42);
+    border-radius: 5px;
+  
+  }
+  
+  .bn:hover {
+    background-color: rgb(240, 113, 138);
+    color: black;
+    box-shadow: 6px 10px 15px rgb(53, 2, 10);
+  }
+  
+  .card:hover {
+    box-shadow: 5px 10px 12px gray;
+    transform: translatey(-5px);
+  }
+  
+  .card {
+    transition: transform 0.5s ease;
+  }
+  
+  .input {
+    padding: 4px;
+  }
+  
+  .modal-footer {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  }
+    .all {
+    max-height: 400px; 
+    overflow-y: auto;
+  }
+
+  .cart-item {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.cart-item img {
+  border-radius: 5px;
+}
+
+.modal-footer {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.modal-footer h6 {
+  margin: 0;
+}
+
+.btn-light {
+  border: 1px solid #ccc;
+  padding: 2px 10px;
+}
+
+  
+  
+
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand d-flex align-items-center" href="#">
+    <span class="text-dark"><img src="images/logo5.jpg" alt="" width="100px" height="50px"></span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mx-auto mt-3">
+      <li class="nav-item mr-3">
+        <a class="nav-link text-dark" href="index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown mr-3">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+        <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+          <a class="dropdown-item" href="about us.html">About Us</a>
+          <a class="dropdown-item" href="#our-team">Our Team</a>
+          <a class="dropdown-item" href="#our-story">Our Story</a>
+        </div>
+      </li>
+      <li class="nav-item mr-3">
+        <a class="nav-link text-dark" href="combo offer.html">Combo Offer</a>
+      </li>
+      <li class="nav-item mr-3">
+        <a class="nav-link text-dark" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="blogDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+        <div class="dropdown-menu" aria-labelledby="blogDropdown">
+          <a class="dropdown-item" href="latest posts.html">Latest Posts</a>
+          <a class="dropdown-item" href="#popular-posts">Popular Posts</a>
+          <a class="dropdown-item" href="#categories">Categories</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+
+   <!-- Cart Button -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#cartModal">
+  <i class="bx bx-cart-alt">Cart</i> (<span id="cart-count" class="cart-count">0</span>)
+</button>
+
+<!-- Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="cart-items" class="list-group">
+          <!-- Cart items will be dynamically inserted here -->
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-between align-items-center">
+        <h6>Total: $<span id="total-amount">0.00</span></h6>
+        <button type="button" class="btn btn-primary">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+     </form>
+  </div>
+</nav>     
+<img src="images/nn4.jpg" alt="" width="100%" height="500px">
+<br><br>
+<center><h3>Combo Teddy Bear</h3></center>
+<div class="container my-5">
+  <div class="row card-container">
+    <div class="card" style="width: 330px">
+      <img src="images/c6.avif" class="card-img-top" alt="Card Image">
+      <div class="card-body">
+        <h5 class="card-title">white Teddy Bear</h5>
+        <p class="card-text">
+          <span style="color: green;"><b>Min. 48% off</b></span> <b>$850</b>
+        </p>
+        <button class="btn btn-primary">View More</button>
+        <button 
+          class="btn btn-danger add-to-cart" 
+          data-name="white Teddy Bear" 
+          data-price="850" 
+          data-image="images/c6.avif">
+         <img src="images/add cart1.png" alt="Add to Cart" style="height: 20px; width: 20px; margin-right: 8px;">Add to Cart
+        </button>
+        <br><br>
+        <p>Free delivery <img src="images/freedelivery.png" alt="" style="width: 30px; height: 30px;"></p>
+      </div>
+    </div>
+        <div class="card" style="width: 330px">
+      <img src="images/co2.jpg" class="card-img-top" alt="Card Image">
+      <div class="card-body">
+        <h5 class="card-title">Adorable Teddy Bear</h5>
+        <p class="card-text"><span style="color: green;"><b>Min. 42% off </b></span><b>$750</b></p>
+        <button class="btn btn-primary">View More</button>
+        <button class="btn btn-danger add-to-cart" 
+           data-name="Adorable Teddy Bear" 
+           data-price="750" 
+           data-image="images/co2.jpg">
+          <img src="images/add cart1.png" alt="Add to Cart" style="height: 20px; width: 20px; margin-right: 8px;">Add to Cart
+        </button>
+        <br><br>
+        <p>Free delivery <img src="images/freedelivery.png" alt="" style="width: 30px; height: 30px;"></p>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 330px">
+      <img src="images/c9.avif" class="card-img-top" alt="Card Image">
+      <div class="card-body">
+        <h5 class="card-title">Best Combo</h5>
+        <p class="card-text"><span style="color: green;"><b>Min. 50% off </b></span><b>$770</b></p>
+        <button class="btn btn-primary">View More</button>
+        <button class="btn btn-danger add-to-cart" 
+           data-name="Best Combo" 
+           data-price="770" 
+           data-image="images/c9.avif">
+          <img src="images/add cart1.png" alt="Add to Cart" style="height: 20px; width: 20px; margin-right: 8px;">Add to Cart
+        </button>
+        <br><br>
+        <p>Free delivery <img src="images/freedelivery.png" alt="" style="width: 30px; height: 30px;"></p>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 330px">
+      <img src="images/e7.jpg" class="card-img-top" alt="Card Image">
+      <div class="card-body">
+        <h5 class="card-title">Sai ji Teddy Combo</h5>
+        <p class="card-text"><span style="color: green;"><b>Min. 45% off </b></span><b>$800</b></p>
+        <button class="btn btn-primary">View More</button>
+        <button class="btn btn-danger add-to-cart" 
+           data-name="Sai ji Teddy Combo" 
+           data-price="800" 
+           data-image="images/e7.jpg">
+          <img src="images/add cart1.png" alt="Add to Cart" style="height: 20px; width: 20px; margin-right: 8px;">Add to Cart
+        </button>
+        <br><br>
+        <p>Free delivery <img src="images/freedelivery.png" alt="" style="width: 30px; height: 30px;"></p>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 330px">
+      <img src="images/c8.jpg" class="card-img-bottom" alt="Card Image">
+      <div class="card-body">
+        <h5 class="card-title">Topgrow Soft Toy</h5>
+        <p class="card-text"><span style="color: green;"><b>Min. 34% off </b></span><b>$690</b></p>
+        <button class="btn btn-primary">View More</button>
+        <button class="btn btn-danger add-to-cart" 
+           data-name="Topgrow Soft Toy" 
+           data-price="690" 
+           data-image="images/c8.jpg">
+          <img src="images/add cart1.png" alt="Add to Cart" style="height: 20px; width: 20px; margin-right: 8px;">Add to Cart
+        </button>
+        <br><br>
+        <p>Free delivery <img src="images/freedelivery.png" alt="" style="width: 30px; height: 30px;"></p>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 330px">
+      <img src="images/e5.avif" class="card-img-top" alt="Card Image">
+      <div class="card-body">
+        <h5 class="card-title">Cute Teddy Bear</h5>
+        <p class="card-text"><span style="color: green;"><b>Min. 55% off </b></span><b>$620</b></p>
+        <button class="btn btn-primary">View More</button>
+        <button class="btn btn-danger add-to-cart" 
+           data-name="Cute Teddy Bear" 
+           data-price="620" 
+           data-image="images/e5.avif">
+          <img src="images/add cart1.png" alt="Add to Cart" style="height: 20px; width: 20px; margin-right: 8px;">Add to Cart
+        </button>
+        <br><br>
+        <p>Free delivery <img src="images/freedelivery.png" alt="" style="width: 30px; height: 30px;"></p>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 330px">
+      <img src="images/e8.webp" class="card-img-top" alt="Card Image">
+      <div class="card-body">
+        <h5 class="card-title">Blue White Combo</h5>
+        <p class="card-text"><span style="color: green;"><b>Min. 60% off </b></span><b>$800</b></p>
+        <button class="btn btn-primary">View More</a>
+        <button class="btn btn-danger add-to-cart" 
+           data-name="Blue White Combo" 
+           data-price="800" 
+           data-image="images/e8.webp">
+          <img src="images/add cart1.png" alt="Add to Cart" style="height: 20px; width: 20px; margin-right: 8px;">Add to Cart
+        </button>
+        <br><br>
+        <p>Free delivery <img src="images/freedelivery.png" alt="" style="width: 30px; height: 30px;"></p>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 330px">
+      <img src="images/e6.jpg" class="card-img-top" alt="Card Image">
+      <div class="card-body">
+        <h5 class="card-title">Glitter Collection</h5>
+        <p class="card-text"><span style="color: green;"><b>Min. 30% off </b></span><b>$900</b></p>
+        <button class="btn btn-primary">View More</button>
+        <button class="btn btn-danger add-to-cart" 
+           data-name="Glitter Collection" 
+           data-price="900" 
+           data-image="images/e6.jpg">
+          <img src="images/add cart1.png" alt="Add to Cart" style="height: 20px; width: 20px; margin-right: 8px;">Add to Cart
+        </button>
+        <br><br>
+        <p>Free delivery <img src="images/freedelivery.png" alt="" style="width: 30px; height: 30px;"></p>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 330px">
+      <img src="images/e3.jpg" class="card-img-top" alt="Card Image">
+      <div class="card-body">
+        <h5 class="card-title">TIED RIOBBONS</h5>
+        <p class="card-text"><span style="color: green;"><b>Min. 40% off </b></span><b>$870</b></p>
+        <button class="btn btn-primary">View More</button>
+        <button class="btn btn-danger add-to-cart" 
+           data-name="TIED RIOBBONS" 
+           data-price="870" 
+           data-image="images/e3.jpg">
+          <img src="images/add cart1.png" alt="Add to Cart" style="height: 20px; width: 20px; margin-right: 8px;">Add to Cart
+        </button>
+        <br><br>
+        <p>Free delivery <img src="images/freedelivery.png" alt="" style="width: 30px; height: 30px;"></p>
+      </div>
+    </div>
+<br>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>About KaviShop</h5>
+        <p>At KaviShop, we specialize in bringing joy and comfort to your loved ones with our unique collection of teddy bears. From classic designs to modern favorites, we have the perfect cuddly friend for everyone.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="combo offer.html">Combo Offer</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> 456 Teddy Lane, Bearsville, USA<br>
+          <i class="fas fa-phone"></i> +1 987 654 3210<br>
+          <i class="fas fa-envelope"></i> support@kavishop.com
+        </p>
+      </div>
+    </div>
+  </div>
+    <hr>
+    <p class="mb-0">&copy; 2024 KaviShop. All rights reserved.</p>
+
+</footer>
+
+<div class="modal fade" id="order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Delivery Address</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <input type="text" placeholder="Name*" required>
+
+          <input type="tel" placeholder="Ph.no" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+          <input type="text" placeholder="House no./Building Name*" required>
+          <input type="email" name="email" placeholder="Email*" required><br><br>
+          <input type="number" placeholder="Quantity" min="1" max="5">
+          <input type="text" size="6" placeholder="Pincode*" required><br><br>
+          <input type="text" placeholder="City Name*" required>
+          <input type="text" placeholder="State*" required><br><br>
+          <input type="text" placeholder="Landmark*" required><br><br>
+          <hr>
+
+          <button type="submit" class="btn btn-success">Deliver to this Address</button><br>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+ let cart = []; 
+function addToCart(name, price, image) {
+  const existingItem = cart.find(item => item.name === name);
+
+  if (existingItem) {
+    existingItem.quantity += 1; // Increment quantity if the item already exists
+  } else {
+    cart.push({ name, price: parseFloat(price), image, quantity: 1 }); // Add a new item
+  }
+
+  updateCartUI(); // Update the cart display
+}
+
+// Function to update the cart UI
+function updateCartUI() {
+  const cartItemsContainer = document.getElementById('cart-items');
+  const totalAmount = document.getElementById('total-amount');
+  const cartCount = document.getElementById('cart-count');
+
+  // Clear existing items
+  cartItemsContainer.innerHTML = '';
+
+  // Initialize total price
+  let totalPrice = 0;
+
+  // Loop through cart items
+  cart.forEach((item, index) => {
+    totalPrice += item.price * item.quantity;
+
+    const listItem = document.createElement('div');
+    listItem.className = 'cart-item d-flex align-items-center justify-content-between mb-3';
+
+    listItem.innerHTML = `
+      <div class="d-flex align-items-center">
+        <img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px; margin-right: 10px;">
+        <span>${item.name}</span>
+      </div>
+      <div class="d-flex align-items-center">
+        <button class="btn btn-sm btn-light" onclick="changeQuantity(${index}, -1)">-</button>
+        <span class="mx-2">${item.quantity}</span>
+        <button class="btn btn-sm btn-light" onclick="changeQuantity(${index}, 1)">+</button>
+      </div>
+      <div class="d-flex align-items-center">
+        <span>$${(item.price * item.quantity).toFixed(2)}</span>
+        <button class="btn btn-sm btn-danger ml-3" onclick="removeFromCart(${index})">Remove</button>
+      </div>
+    `;
+
+    cartItemsContainer.appendChild(listItem);
+  });
+
+  // Update total price and cart count
+  totalAmount.textContent = totalPrice.toFixed(2);
+  cartCount.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
+}
+
+// Function to change item quantity
+function changeQuantity(index, delta) {
+  cart[index].quantity += delta;
+
+  if (cart[index].quantity <= 0) {
+    cart.splice(index, 1); 
+  }
+
+  updateCartUI();
+}
+
+// Function to remove an item
+function removeFromCart(index) {
+  cart.splice(index, 1);
+  updateCartUI();
+}
+
+// Attach click event to Add to Cart buttons
+document.querySelectorAll('.add-to-cart').forEach(button => {
+  button.addEventListener('click', event => {
+    const name = event.target.dataset.name;
+    const price = event.target.dataset.price;
+    const image = event.target.dataset.image;
+
+    addToCart(name, price, image);
+  });
+});
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

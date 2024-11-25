@@ -1,0 +1,214 @@
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>latest post</title>
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+     <style>
+     body {
+      background-color: #f8f9fa;
+    }
+    .navbar-brand img {
+      max-height: 40px; 
+      margin-right: 10px; 
+    }
+    .img-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+    }
+    .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+    }
+    .img-container:hover img {
+      transform: scale(1.1);
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 20px;
+    }
+    .img-container:hover .overlay {
+      opacity: 1;
+    }
+    .img {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .navbar-nav .nav-link {
+  color: rgb(199, 194, 194);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+footer {
+      background-color: #212222;
+      color: rgb(240, 231, 231);
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer a {
+      color: #eaeaf1;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #ffc107;
+    }
+     </style>
+   </head>
+   <body>
+     <nav class="navbar navbar-expand-lg navbar-light">
+       <a class="navbar-brand d-flex align-items-center" href="#">
+        <span class="text-dark"><img src="images/logo4.jpg" alt="" width="100px" height="50px"></span>
+       </a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav mx-auto mt-3">
+           <li class="nav-item mr-3">
+             <a class="nav-link text-dark" href="index.html">Home</a>
+           </li>
+           <li class="nav-item dropdown mr-3">
+             <a class="nav-link dropdown-toggle text-dark" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+             <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+               <a class="dropdown-item" href="about us.html">About Us</a>
+               <a class="dropdown-item" href="#our-team">Our Team</a>
+               <a class="dropdown-item" href="#our-story">Our Story</a>
+             </div>
+           </li>
+           <li class="nav-item mr-3">
+             <a class="nav-link text-dark" href="combo offer.html">Combo Offer</a>
+           </li>
+           <li class="nav-item mr-3">
+             <a class="nav-link text-dark" href="contact.html">Contact</a>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle text-dark" href="#" id="blogDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+             <div class="dropdown-menu" aria-labelledby="blogDropdown">
+               <a class="dropdown-item" href="latest posts.html">Latest Posts</a>
+               <a class="dropdown-item" href="#popular-posts">Popular Posts</a>
+               <a class="dropdown-item" href="#categories">Categories</a>
+             </div>
+           </li>
+         </ul>
+         <form class="form-inline my-2 my-lg-0">
+           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+             <!-- Cart Button -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#cartModal">
+  <i class="bx bx-cart-alt">Cart</i> (<span id="cart-count" class="cart-count">0</span>)
+</button>
+         </form>
+       </div>
+     </nav>
+     <img src="images/lbg2.jpg" alt="" width="100%" height="600px">
+   <br><br>
+    <i><center><h2>New Collection</h2></center></i>
+   <br>
+  </style>
+</head>
+<body>
+  <div class="img">
+    <div class="img-container">
+      <img src="images/m4.avif" alt="">
+      <div class="overlay">$500</div>
+    </div>
+    <div class="img-container">
+      <img src="images/t2.jpg" alt="">
+      <div class="overlay">$800</div>
+    </div>
+    <div class="img-container">
+      <img src="images/t4.jpg" alt="">
+      <div class="overlay">$600</div>
+    </div>
+    <div class="img-container">
+      <img src="images/t5.jpg" alt="">
+      <div class="overlay">$900</div>
+    </div>
+    <div class="img-container">
+      <img src="images/t6.jpg" alt="">
+      <div class="overlay">$1100</div>
+    </div>
+    <div class="img-container">
+      <img src="images/t7.jpg" alt="">
+      <div class="overlay">$1000</div>
+    </div>
+    <div class="img-container">
+      <img src="images/t8.jpg" alt="">
+      <div class="overlay">$700</div>
+    </div>
+    <div class="img-container">
+      <img src="images/t9.jpg" alt="">
+      <div class="overlay">$800</div>
+    </div>
+    <div class="img-container">
+      <img src="images/m2.jfif" alt="">
+      <div class="overlay">$850</div>
+    </div>
+    <div class="img-container">
+      <img src="images/18.jpg" alt="">
+      <div class="overlay">$1200</div>
+    </div>
+    <div class="img-container">
+      <img src="images/mm3.jpg" alt="">
+      <div class="overlay">$900</div>
+    </div>
+    <div class="img-container">
+      <img src="images/t3.jpg" alt="">
+      <div class="overlay">$990</div>
+    </div>
+  </div>
+<br><br><br>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>About KaviShop</h5>
+        <p>At KaviShop, we specialize in bringing joy and comfort to your loved ones with our unique collection of teddy bears. From classic designs to modern favorites, we have the perfect cuddly friend for everyone.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="combo offer.html">Combo Offer</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> 456 Teddy Lane, Bearsville, USA<br>
+          <i class="fas fa-phone"></i> +1 987 654 3210<br>
+          <i class="fas fa-envelope"></i> support@kavishop.com
+        </p>
+      </div>
+    </div>
+  </div>
+    <hr>
+    <p class="mb-0">&copy; 2024 KaviShop. All rights reserved.</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

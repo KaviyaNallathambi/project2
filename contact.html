@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("images/bg3.jpg"); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+input[type=text]:enabled
+{
+    background-color: #cccbca;
+}
+input[type=password]:enabled
+{
+    background-color: #d3d1cd;
+    
+}
+
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .login-container {
+            width: 100%;
+            max-width: 350px; 
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 70px; 
+        }
+        .login-container h2 {
+            margin-bottom: 30px;
+            text-align: center;
+            color: #343a40;
+        }
+        .form-group .fa {
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 10px;
+            color: #6c757d;
+        }
+        .form-control {
+            padding-left: 40px;
+        }
+        .btn-login {
+            width: 100%;
+            background-color: #343a40;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .btn-login:hover {
+            background-color: #a4a29e;
+            color: #343a40;
+        }
+        .forgot-password {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .forgot-password a {
+            color: #343a40;
+            display: inline;
+            text-decoration: none;
+        }
+        .forgot-password a:hover {
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <span class="text-dark"><img src="images/logo6.jpg" alt="" width="150px" height="40px"></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto mt-3">
+                <li class="nav-item mr-3">
+                    <a class="nav-link text-dark" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown mr-3">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                    <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <a class="dropdown-item" href="about us.html">About Us</a>
+                        <a class="dropdown-item" href="#our-team">Our Team</a>
+                        <a class="dropdown-item" href="#our-story">Our Story</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link text-dark" href="combo offer.html">Combo Offer</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link text-dark" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="blogDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                    <div class="dropdown-menu" aria-labelledby="blogDropdown">
+                        <a class="dropdown-item" href="latest posts.html">Latest Posts</a>
+                        <a class="dropdown-item" href="#popular-posts">Popular Posts</a>
+                        <a class="dropdown-item" href="#categories">Categories</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <!-- Cart Button -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#cartModal">
+    <i class="bx bx-cart-alt">Cart</i> (<span id="cart-count" class="cart-count">0</span>)
+  </button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group position-relative">
+                <i class="fa fa-user"></i>
+                <input type="text" class="form-control" id="username" name="name" maxlength="6" placeholder="username" required>
+            </div>
+            <div class="form-group position-relative">
+                <i class="fa fa-lock"></i>
+                <input type="password" class="form-control" id="password" min="2" maxlength="5" placeholder="Password?" required>
+            </div>
+            <button type="submit" class="btn btn-login">Login</button>
+        </form>
+        <div class="forgot-password">
+            <p>Dont't have an account? <a href="register.html" style="color: rgb(38, 129, 165);">Register</a></p>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> 
+
+

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<title>Teddy bear</title>
+<style>
+    .container {
+  display: flex;
+  align-items: center; 
+  margin-top: 20px;
+}
+.float-left-img {
+  float: left;
+  margin-right: 20px;
+  width: 400px;
+  height: 400px;
+}
+.text-content {
+  flex: 1; 
+  text-align: justify; 
+      line-height: 1.6;
+}
+.text-content h2 {
+  text-align: center;
+    margin: 0;
+}
+.text-content p{
+    font-size: large;
+}
+.happy-customers {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ebd8ea;
+}
+.happy-customers h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #131111;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fcf6f8;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  max-width: 400px;
+  margin: 0 auto 30px auto;
+}
+
+.customer-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.testimonial-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.testimonial-content p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial-card {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .customer-photo {
+    margin-right: 20px;
+  }
+
+  .testimonial-content {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .happy-customers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .testimonial-card {
+    width: 45%;
+    margin-bottom: 40px;
+  }
+}
+
+.navbar-nav .nav-link {
+  color: rgb(199, 194, 194);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+footer {
+      background-color: #212222;
+      color: rgb(240, 231, 231);
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer a {
+      color: #eaeaf1;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #ffc107;
+    }
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <span class="text-dark"><img src="images/logo5.jpg" alt="" width="100px" height="50px"></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto mt-3">
+              <li class="nav-item mr-3">
+                  <a class="nav-link text-dark" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown mr-3">
+                  <a class="nav-link dropdown-toggle text-dark" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                  <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                      <a class="dropdown-item" href="about us.html">About Us</a>
+                      <a class="dropdown-item" href="#our-team">Our Team</a>
+                      <a class="dropdown-item" href="#our-story">Our Story</a>
+                  </div>
+              </li>
+              <li class="nav-item mr-3">
+                  <a class="nav-link text-dark" href="combo offer.html">Combo Offer</a>
+              </li>
+              <li class="nav-item mr-3">
+                  <a class="nav-link text-dark" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-dark" href="#" id="blogDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                  <div class="dropdown-menu" aria-labelledby="blogDropdown">
+                      <a class="dropdown-item" href="latest posts.html">Latest Posts</a>
+                      <a class="dropdown-item" href="#popular-posts">Popular Posts</a>
+                      <a class="dropdown-item" href="#categories">Categories</a>
+                  </div>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <!-- Cart Button -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#cartModal">
+  <i class="bx bx-cart-alt">Cart</i> (<span id="cart-count" class="cart-count">0</span>)
+</button>
+          </form>
+      </div>
+  </nav>
+  <center> <h2>About us</h2></center>
+  <div class="container">
+    <div class="content-wrapper">
+      <img src="images/lbg2.jpg" alt="Description" class="float-left-img">
+      <div class="text-content"><h2>The Story of Loved Before </h2> <br><p>The first eco-friendly, fully sustainable soft toy adoption agency
+        "Several years back, during my time as a volunteer at a charity shop, I observed the influx of second hand toys arriving at the store.
+        These pre-loved toys, often handed over with cherished memories and sentimental significance, were carelessly cast aside, sometimes relegated to becoming dog toys or, even more dishearteningly, destined for landfill.
+        It became evident to me how the love, the vibrant life, and the stories of these eco toys were at risk of being lost and forgotten in an instant."</p>
+      </h2>
+</div>
+    </div>
+    </div>
+    <div>
+            <center><i><h2>Our Spl Teddy</h2></i></center><br>
+<img src="images/c7.avif" alt=""width="330px" height="300px">
+<img src="images/lbg1.webp" alt="" width="330px" height="300px">
+<img src="images/bg1.jpg" alt="" width="330px" height="300px">
+<img src="images/m4.avif" alt="" width="330px" height="300px">
+<br><br>
+<center><h2>Our Happy Customers Say</h2></center>
+<br>
+<section class="happy-customers">
+  <div class="testimonial-card">
+    <img src="images/cu3.jfif" alt="Customer Photo 1" class="customer-photo">
+    <div class="testimonial-content">
+      <h3>Emily R.</h3>
+      <p>"I bought a teddy bear for my daughter's birthday, and she absolutely loves it! The quality is amazing, and I appreciate the eco-friendly materials. I'll definitely be shopping here again!"</p>
+    </div>
+  </div>
+
+  <div class="testimonial-card">
+    <img src="images/cu2.jpg" alt="Customer Photo 2" class="customer-photo">
+    <div class="testimonial-content">
+      <h3>John D.</h3>
+      <p>"The adoption process for our new teddy was smooth and fun. It felt like we were giving a home to a special friend. Plus, knowing it's sustainable makes it even better!"</p>
+    </div>
+  </div>
+
+  <div class="testimonial-card">
+    <img src="images/cu1.jfif" alt="Customer Photo 3" class="customer-photo">
+    <div class="testimonial-content">
+      <h3>Sophia M.</h3>
+      <p>"Loved Before teddy bears are the best! My son takes his bear everywhere, and it's held up beautifully. Great customer service too!"</p>
+    </div>
+  </div>
+
+  <div class="testimonial-card">
+    <img src="images/cu5.jfif" alt="Customer Photo 4" class="customer-photo">
+    <div class="testimonial-content">
+      <h3>Michael T.</h3>
+      <p>"I was looking for a unique gift, and this teddy bear shop was perfect. The bear I chose has so much character, and it's clear a lot of love went into its creation."</p>
+    </div>
+  </div>
+</section>
+<br><br><br>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>About KaviShop</h5>
+        <p>At KaviShop, we specialize in bringing joy and comfort to your loved ones with our unique collection of teddy bears. From classic designs to modern favorites, we have the perfect cuddly friend for everyone.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="combo offer.html">Combo Offer</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> 456 Teddy Lane, Bearsville, USA<br>
+          <i class="fas fa-phone"></i> +1 987 654 3210<br>
+          <i class="fas fa-envelope"></i> support@kavishop.com
+        </p>
+      </div>
+    </div>
+  </div>
+    <hr>
+    <p class="mb-0">&copy; 2024 KaviShop. All rights reserved.</p>
+
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
